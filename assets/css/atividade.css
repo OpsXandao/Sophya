@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -108,50 +108,18 @@ body {
   display: none;
 }
 
-/*Home Page*/
-#hero {
-  height: 90vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-#hero h4 {
-  padding-bottom: 15px;
-}
-
-#hero h1 {
-  color: #088178;
-}
-
-#hero button {
-  background-image: url(img/button.png);
-  background-color: transparent;
-  color: #088178;
-  border: 0;
-  padding: 14px 80px 14px 65px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  font-weight: 650;
-  font-size: 15px;
-}
-
-.container{
-  padding: 2rem;
-  display:flex;
-  align-items:center;
-  justify-content:space-around;
-}
+/**/
 
 .card{
-  width: 20rem;
+  margin-left: auto;
+  width: 50rem;
   height: 31rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   overflow: hidden;
   border: 0.5rem #088178;
   position: relative;
+  margin-top: 2rem;
+  margin-right: 7.5em;
 }
 
 .card-photo{
@@ -188,53 +156,60 @@ body {
   cursor: pointer;
 }
 
-.card-body i:hover{
-transform:scale(1.4);
+
+
+
+/**/
+
+
+.menu {
+  float: left;
+  width: 250px;
+  padding: 10px 10px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: black;
+  z-index: 4;
 }
 
-.box{
-  text-align: center;
+
+.logo {
+  color:wheat;
+  font-size: 25px
 }
 
-.box h1 h2{
-  margin: 0.8rem;
+.nav {
+  display: flex;
+  flex-direction: column;
 }
-
-.box h1{
-  cursor: pointer;
-  font-size: 2rem;
-  background-color:rgb(160, 160, 160);
-  padding: 1rem 2rem ;
-  border-radius: 1rem;
-  margin: 2rem;
-  transition: 0.5s;
-}
-
-#span-h2{
-  cursor: pointer;
-  transition: 1s;
-  background-color: #088178;
-}
-
-.box h2{
-  font-weight: 600;
+.nav-item {
+  text-decoration: none;
   color: white;
-  font-size: 1.4rem;
-  background-color: orange;
-  padding: 1rem 2rem ;
-  border-radius: 1rem;
-  margin: 2rem;
+  padding: 10px;
+}
+
+#nav-item-1 {
+  background-color: rgb(97, 102, 102);
+}
+
+.list-item {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer-nav {
+  margin-top: 17rem;
+  display: flex;
+}
+
+.nav-button {
+  border: 1px solid var(--essential-subdued,#878787);
+  border-radius: 500px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
   cursor: pointer;
-  transition: 0.5s;
-}
-
-.box h2:hover, #span-h2:hover, .box h1:hover {
-  background: #088178;
-  transform: scale(1.1);
-}
-
-.box h1:hover{
-color: white;
 }
 
 /*Start Media Query*/
